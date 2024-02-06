@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Management Screen</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>User Management</h1>
+
+  <!-- Search Bar -->
+  <input type="text" id="searchInput" placeholder="Search by username or email">
+  
+  <!-- Filter Dropdowns -->
+  <select id="roleFilter">
+    <option value="">Filter by Role</option>
+    <option value="admin">Admin</option>
+    <option value="user">User</option>
+  </select>
+  <select id="statusFilter">
+    <option value="">Filter by Status</option>
+    <option value="active">Active</option>
+    <option value="inactive">Inactive</option>
+  </select>
+  
+  <!-- User List Table -->
+  <table id="userTable">
+    <thead>
+      <tr>
+        <th>Username</th>
+        <th>Email</th>
+        <th>Role</th>
+        <th>Status</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="userList">
+      <!-- User list will be populated dynamically using JavaScript -->
+    </tbody>
+  </table>
+  
+  <!-- Add User Button -->
+  <button id="addUserBtn">Add User</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
